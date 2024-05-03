@@ -38,3 +38,17 @@ To run and test this code on a Raspberry Pi Pico (or similar device):
 
     Modify:
         You can customize the displayed text or make changes to how the temperature is shown. Adjust the code in main.py as needed.
+
+
+The main.py script pin-outs:
+
+    LCD Display:
+        Uses the I2C interface.
+        scl (serial clock) is connected to pin 9.
+        sda (serial data) is connected to pin 8.
+
+    DS18B20 Temperature Sensor:
+        Uses the 1-Wire interface.
+        The sensor GND connector is connected to pin GND.
+        The sensor DAT connector is connected to pin 15.
+        The sensor VCC connector is connected to pin 3.3v.
